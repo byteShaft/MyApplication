@@ -1,0 +1,151 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.khalid.myapplication2.SettingFragment">
+
+
+    <TextView
+        android:id="@+id/setting_title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ACCOUNT INFORMATION"
+        android:padding="5dp" />
+
+
+    <View
+        android:id="@+id/setting_view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@id/setting_title1"/>
+
+
+    <Button
+        android:id="@+id/sign_out_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign out"
+        android:gravity="center|left"
+        android:textSize="13sp"
+        android:padding="5dp"
+        android:layout_below="@+id/setting_view1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/ripple"/>
+
+
+    <Button
+        android:id="@+id/sign_in_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign in"
+        android:gravity="center|left"
+        android:textSize="13sp"
+        android:padding="5dp"
+        android:layout_below="@+id/sign_out_btn"
+        android:background="@drawable/ripple"/>
+
+
+    <Button
+        android:id="@+id/notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Notifications"
+        android:gravity="center|left"
+        android:textSize="13sp"
+        android:padding="5dp"
+        android:layout_below="@+id/sign_in_btn"
+        android:background="@drawable/ripple"/>
+
+
+    <Button
+        android:id="@+id/country_region"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Region / Language"
+        android:gravity="center|left"
+        android:textSize="13sp"
+        android:padding="5dp"
+        android:layout_below="@+id/notification"
+        android:background="@drawable/ripple"/>
+
+
+    <Button
+        android:id="@+id/clear_search_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clear search history"
+        android:gravity="center|left"
+        android:textSize="13sp"
+        android:padding="5dp"
+        android:layout_below="@+id/country_region"
+        android:background="@drawable/ripple"/>
+
+
+    <TextView
+        android:id="@+id/setting_title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ABOUT"
+        android:layout_below="@+id/clear_search_history"
+        android:padding="5dp"
+        />
+
+    <View
+        android:id="@+id/setting_view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@id/setting_title2"/>
+
+
+    <Button
+        android:id="@+id/user_agreement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="User Agreement"
+        android:gravity="center|left"
+        android:textSize="13sp"
+        android:padding="5dp"
+        android:layout_below="@+id/setting_view2"
+        android:background="@drawable/ripple"/>
+
+
+    <Button
+        android:id="@+id/privacy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Privacy"
+        android:gravity="center|left"
+        android:textSize="13sp"
+        android:padding="5dp"
+        android:layout_below="@+id/user_agreement"
+        android:background="@drawable/ripple"/>
+
+
+    <Button
+        android:id="@+id/customer_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Customer Service"
+        android:gravity="center|left"
+        android:textSize="13sp"
+        android:padding="5dp"
+        android:layout_below="@+id/privacy"
+        android:background="@drawable/ripple"/>
+
+
+    <Button
+        android:id="@+id/about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About"
+        android:gravity="center|left"
+        android:textSize="13sp"
+        android:padding="5dp"
+        android:layout_below="@+id/customer_service"
+        android:background="@drawable/ripple"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:background="?selectableItemBackground"
+        android:paddingBottom="10dp">
+
+    <ImageView
+        android:id="@+id/specific_list_Item_Img"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:src="@drawable/defualt_img"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="#ffffff"
+        android:padding="5dp"/>
+
+
+    <TextView
+        android:id="@+id/specific_list_Item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Name of product"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/specific_list_Item_Img" />
+
+
+    <TextView
+        android:id="@+id/specific_item_briefDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Brief Description of product"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:layout_below="@+id/specific_list_Item_name"
+        android:layout_toRightOf="@+id/specific_list_Item_Img"
+        android:layout_toEndOf="@+id/specific_list_Item_Img"
+        android:layout_marginTop="1dp" />
+
+
+    <TextView
+        android:id="@+id/specific_item_price_tag"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="SAR"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/specific_item_briefDescription"
+        android:layout_toEndOf="@+id/specific_list_Item_Img" />
+
+
+    <TextView
+        android:id="@+id/specific_item_price"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="000.00"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_alignBaseline="@+id/specific_item_price_tag"
+        android:layout_alignBottom="@+id/specific_item_price_tag"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/specific_item_price_tag" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

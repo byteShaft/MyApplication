@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f6">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/viewpager2"
+                android:layout_height="200dp"
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:background="#f6f6f6"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+            </ImageView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardview1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/viewpager2"
+                android:layout_alignParentStart="true">
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:padding="7dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="Name"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:id="@+id/textView1" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:text="Breif description of the product"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:id="@+id/textView2"
+                        android:layout_below="@+id/textView1"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Price"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:id="@+id/textView3"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="60dp" />
+
+                    <View
+                        android:id="@+id/sep_view1"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray"
+                        android:layout_marginTop="35dp"
+                        android:layout_below="@+id/textView3"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:id="@+id/price_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:layout_alignParentLeft="true"
+                        android:text="SAR 55.36"
+                        android:textSize="15sp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="45dp"
+                        android:layout_below="@+id/sep_view1"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="50dp"
+                        android:text="Shipping"
+                        android:gravity="center"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"
+                        android:layout_below="@+id/price_text"/>
+
+                    <TextView
+                        android:id="@+id/delivery_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="45dp"
+                        android:text="Oct 6 - 11"
+                        android:textSize="15sp"
+                        android:layout_below="@+id/sep_view1"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="35dp"
+                        android:text="Est. Delivery"
+                        android:gravity="center"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"
+                        android:layout_below="@+id/delivery_text"/>
+
+
+
+                    <View
+                        android:id="@+id/sep_view2"
+                        android:layout_width="1dp"
+                        android:layout_height="55dp"
+                        android:background="@android:color/darker_gray"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"/>
+
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardview_btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardview1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp">
+
+
+                <Button
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ripple"
+                    android:text="BUY IT NOW"
+                    android:textSize="15sp"/>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardview_btn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardview_btn1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp">
+
+
+                <Button
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ripple"
+                    android:text="ADD TO CART"
+                    android:textSize="15sp"/>
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/about_this_item"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About This Item"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textSize="20sp"
+                android:layout_below="@+id/cardview_btn2"
+                android:layout_alignStart="@+id/cardview_btn2"
+                android:layout_marginTop="15dp"/>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardview_btn3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/about_this_item"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="1dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/quantity"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textSize="15sp"
+                        android:text="Quantity"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/brand"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textSize="15sp"
+                        android:text="Brand"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/quantity"
+                        android:layout_marginTop="5dp"/>
+
+                    <TextView
+                        android:id="@+id/type"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textSize="15sp"
+                        android:text="Type"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/brand"
+                        android:layout_marginTop="5dp"/>
+
+
+                    <TextView
+                        android:id="@+id/quantity_value"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textSize="15sp"
+                        android:text="13"
+                        android:textStyle="bold"
+                        android:textColor="@color/cardview_dark_background"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/quantity"
+                        android:layout_marginStart="78dp"
+                        android:layout_alignBaseline="@id/quantity"/>
+
+                    <TextView
+                        android:id="@+id/brand_value"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textSize="15sp"
+                        android:text="Company X"
+                        android:textStyle="bold"
+                        android:textColor="@color/cardview_dark_background"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/quantity"
+                        android:layout_below="@id/quantity_value"
+                        android:layout_marginStart="78dp"
+                        android:layout_alignBaseline="@+id/brand"/>
+
+                    <TextView
+                        android:id="@+id/type_value"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textSize="15sp"
+                        android:text="Pills"
+                        android:textStyle="bold"
+                        android:textColor="@color/cardview_dark_background"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/type"
+                        android:layout_below="@id/brand_value"
+                        android:layout_alignStart="@+id/quantity_value"
+                        android:layout_alignBaseline="@+id/type"/>
+
+                    <View
+                        android:id="@+id/sep_view3"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@+id/type"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:id="@+id/full_item_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textSize="15sp"
+                        android:text="Full description of the product being viewed. Full description of the product being viewed. Full description of the product being viewed. Full description of the product being viewed. Full description of the product being viewed."
+                        android:textStyle="bold"
+                        android:textColor="@color/cardview_dark_background"
+                        android:layout_below="@id/sep_view3"/>
+
+
+                </RelativeLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>
